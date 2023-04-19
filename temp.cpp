@@ -1,25 +1,19 @@
-#include <iostream>
-#include <vector>
+#include<iostream>
+#include<vector>
 using namespace std;
 
-void nextMove(int n, int r, int c, vector <string> grid){
-    //your logic here
+void next_move(int posr, int posc, vector <string> board) {
+    //add logic here
 }
 
 int main(void) {
-
-    int n, r, c;
-    vector <string> grid;
-
-    cin >> n;
-    cin >> r;
-    cin >> c;
-
-    for(int i=0; i<n; i++) {
-        string s; cin >> s;
-        grid.push_back(s);
+    int pos[2];
+    vector <string> board;
+    cin>>pos[0]>>pos[1];
+    for(int i=0;i<5;i++) {
+        string s;cin >> s;
+        board.push_back(s);
     }
-
-    nextMove(n, r, c, grid);
+    next_move(pos[0], pos[1], board);
     return 0;
 }
