@@ -25,20 +25,7 @@ void nextMove(int n, int r, int c, vector<string> grid)
     int rangeY = arr[2] - arr[0];
     int rangeX = arr[3] - arr[1];
 
-    if (rangeX > rangeY)
-    {
-        if (rangeY > 0)
-        {
-
-            cout << "DOWN\n";
-        }
-        else if (rangeY < 0)
-        {
-
-            cout << "UP\n";
-        }
-    }
-    else if (rangeY >= rangeX)
+    if (rangeX != 0)
     {
         if (rangeX > 0)
         {
@@ -49,6 +36,19 @@ void nextMove(int n, int r, int c, vector<string> grid)
         {
 
             cout << "LEFT\n";
+        }
+    }
+    else
+    {
+        if (rangeY > 0)
+        {
+
+            cout << "DOWN\n";
+        }
+        else if (rangeY < 0)
+        {
+
+            cout << "UP\n";
         }
     }
 }
