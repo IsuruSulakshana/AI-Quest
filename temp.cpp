@@ -3,7 +3,7 @@
 using namespace std;
 
 void next_move(int posr, int posc, vector <string> board) {
-    //add logic here
+    
 }
 
 int main(void) {
