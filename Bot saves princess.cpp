@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-void displayPathtoPrincess(int n, vector <string> grid){
+void displayPathToPrincess(int n, vector <string> grid){
     int arr[4] = {0,0,0,0};
     string c;
     for (int i = 0; i < n; i++)
@@ -72,7 +72,7 @@ int main(void) {
         grid.push_back(s);
     }
 
-    displayPathtoPrincess(m,grid);
+    displayPathToPrincess(m,grid);
 
     return 0;
 }
